@@ -1,0 +1,9 @@
+[MFLOG|0|2024-03-30T22:01:04.093505Z|runtime|edc8b4c7-2ada-4a6d-bb5c-f51c8b3e3378]The dataset shape is (88033, 17)
+[MFLOG|0|2024-03-30T22:01:04.106111Z|runtime|9c3ecc93-f636-4b09-9460-68879a26ad0a]How it looks like:
+[MFLOG|0|2024-03-30T22:01:04.106365Z|runtime|62eeed0c-b7d1-4e70-b9b2-74810e54b075]            mess id_number  ...  day_name                  Food
+[MFLOG|0|2024-03-30T22:01:05.392555Z|runtime|79b449bb-dc51-4e4d-8785-f131064872c4]2826  mess-galav  12040040  ...    Monday           Mix Veg dry
+[MFLOG|0|2024-03-30T22:01:05.392782Z|runtime|8e876927-0cc3-4586-ba06-3b019a38d595]2827  mess-galav  12040040  ...  Saturday  Choley(kabuli chana)
+[MFLOG|0|2024-03-30T22:01:05.392879Z|runtime|203322b8-8bde-4ad5-a574-998755d30049]2979  mess-galav  12040100  ...    Sunday        Veg Manchurian
+[MFLOG|0|2024-03-30T22:01:05.392977Z|runtime|2a40ba91-8690-4ad1-8a51-ca72416c9158]2980  mess-galav  12040100  ...  Saturday  Choley(kabuli chana)
+[MFLOG|0|2024-03-30T22:01:05.393070Z|runtime|50daac6f-5cab-4a31-9c2b-bf0cf0d1eb06]
+[MFLOG|0|2024-03-30T22:01:05.393247Z|runtime|7f31c709-c494-40c2-8884-cf08fa029cd6][4 rows x 17 columns]

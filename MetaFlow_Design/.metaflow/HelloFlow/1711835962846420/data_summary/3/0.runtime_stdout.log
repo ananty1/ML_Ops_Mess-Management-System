@@ -1,0 +1,8 @@
+[MFLOG|0|2024-03-30T21:59:28.549875Z|runtime|adb0eb33-f350-48d5-9c1e-be2e1e26fe2d]Shape of the dataset: (88549, 8)
+[MFLOG|0|2024-03-30T21:59:28.563729Z|runtime|ed5cc59e-e711-4b7c-8f95-65b078244fe2]Sample records from the dataset:
+[MFLOG|0|2024-03-30T21:59:28.563980Z|runtime|4534ef93-fd27-45ae-bd7b-9027bfa2c88b]      account_from account_to  ... transaction_ref_no remarks
+[MFLOG|0|2024-03-30T21:59:28.896289Z|runtime|9748e008-0376-4942-8e1a-be0a7967ba79]80362    mess-ssai   12340570  ...                NaN   Basic
+[MFLOG|0|2024-03-30T21:59:28.896495Z|runtime|bf4d9e86-64bf-4698-bff0-660d6fe93b38]24209   mess-galav   12241690  ...                NaN   Basic
+[MFLOG|0|2024-03-30T21:59:28.896715Z|runtime|2e7b6a57-5196-4a68-8445-0fae377cc3ed]82923    mess-ssai   12341170  ...                NaN  Add-On
+[MFLOG|0|2024-03-30T21:59:28.896820Z|runtime|edd788e2-0c6d-4c64-8a3b-76f87bff4e07]
+[MFLOG|0|2024-03-30T21:59:28.896991Z|runtime|580a9922-aec5-43c0-8d23-b8fd71cb2c52][3 rows x 8 columns]

@@ -1,0 +1,42 @@
+[MFLOG|0|2024-03-30T23:30:13.733842Z|runtime|b01e4949-c15e-42ed-ac75-68eeee98d7ee]<flow LinearRegressionFlow step start> failed:
+[MFLOG|0|2024-03-30T23:30:13.737973Z|runtime|e3492ed5-1a50-4784-a7fa-bf29c0816ec1]    Internal error
+[MFLOG|0|2024-03-30T23:30:13.738627Z|runtime|3b85da30-81f3-40e3-8e85-cacc27fe887b]Traceback (most recent call last):
+[MFLOG|0|2024-03-30T23:30:13.738795Z|runtime|ecdb063c-a9c4-49c2-8ba9-14662f79b02f]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-03-30T23:30:13.738903Z|runtime|8825e9e4-59fe-4ca1-bf28-68194d50f01e]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-03-30T23:30:13.739073Z|runtime|a0e7adb0-2005-4d4a-8277-6d58bcf39bda]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-03-30T23:30:13.739301Z|runtime|5043c88f-d71e-4e72-9934-b986d916dc3b]    return func(args, kwargs)
+[MFLOG|0|2024-03-30T23:30:13.739505Z|runtime|f9afd64d-988d-4b4f-91f9-ce69872d43c8]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-03-30T23:30:13.739760Z|runtime|65d0095c-ffe2-4af0-906d-4463e86c3039]    return self.main(args, kwargs)
+[MFLOG|0|2024-03-30T23:30:13.740136Z|runtime|11cb7715-2175-4566-be1f-15e0cccd4923]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-03-30T23:30:13.740466Z|runtime|a0c6d666-3e5e-4d9a-b80a-d222b02c5c3b]    rv = self.invoke(ctx)
+[MFLOG|0|2024-03-30T23:30:13.740805Z|runtime|36029464-f642-49e5-af5b-e6571a4feef4]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-03-30T23:30:13.741163Z|runtime|6ed1ac90-f40e-45e0-8eaf-834a0304052b]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-03-30T23:30:13.741492Z|runtime|a1751e5e-b7eb-4df6-813e-f5d33cc184e1]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-03-30T23:30:13.741871Z|runtime|e765dde9-ef09-426e-846e-dae5c4d3af14]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-03-30T23:30:13.742233Z|runtime|ad3f18fd-52a2-4706-846c-8c8f803046a4]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-03-30T23:30:13.742674Z|runtime|7b2f50fe-bcab-4255-91f1-5171907fcfb3]    return callback(args, kwargs)
+[MFLOG|0|2024-03-30T23:30:13.906932Z|runtime|73a155b3-08c4-44a7-9d5b-52b56da038f0]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-03-30T23:30:13.907223Z|runtime|58c55002-edd6-43cd-9e3b-c2abb9e7b83f]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-03-30T23:30:13.907458Z|runtime|fa99258d-e429-4b98-befa-ee2a2c24b2cc]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-03-30T23:30:13.907650Z|runtime|284cd327-bfa6-4372-ba16-6bea48c77856]    task.run_step(
+[MFLOG|0|2024-03-30T23:30:13.907843Z|runtime|cf94c680-49d0-476f-833a-3b35dc684b84]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-03-30T23:30:13.908034Z|runtime|4c2a4fde-f639-4457-bb92-059fc28c74c7]    self._exec_step_function(step_func)
+[MFLOG|0|2024-03-30T23:30:13.908240Z|runtime|e1052796-7d4e-43c3-b6e1-952f523ebd4d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-03-30T23:30:13.908483Z|runtime|2a648f3a-9ed7-4f57-ad09-c93acdae290a]    step_function()
+[MFLOG|0|2024-03-30T23:30:13.908701Z|runtime|ae191fa4-78ec-487e-8bb8-110c5b3edeeb]  File "/home/ananty/metaflow-learning/CSD_Proj/model_preparation.py", line 18, in start
+[MFLOG|0|2024-03-30T23:30:13.908861Z|runtime|cc4cf6e5-04e2-4772-9942-af8ff8b09d34]    self.dataset = pd.read_csv(self.dataset_file, index_col=0)
+[MFLOG|0|2024-03-30T23:30:13.909079Z|runtime|8a68165d-cc57-41b7-ac84-06f7f8da504b]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1026, in read_csv
+[MFLOG|0|2024-03-30T23:30:13.909266Z|runtime|c0e8bc74-fd15-49bb-bf1a-2d7644d2f8d4]    return _read(filepath_or_buffer, kwds)
+[MFLOG|0|2024-03-30T23:30:13.909487Z|runtime|2a070971-2d4c-4e46-85b3-6eb782efd70d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 620, in _read
+[MFLOG|0|2024-03-30T23:30:13.909652Z|runtime|c757d8ac-3584-45f6-85e9-39af1b7318b5]    parser = TextFileReader(filepath_or_buffer, kwds)
+[MFLOG|0|2024-03-30T23:30:13.909814Z|runtime|e1692eb9-4a38-4f2e-8d29-c6c88c853a91]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1620, in __init__
+[MFLOG|0|2024-03-30T23:30:13.910032Z|runtime|bb9bd459-7c6d-4195-8a7b-8a1b3b19e00e]    self._engine = self._make_engine(f, self.engine)
+[MFLOG|0|2024-03-30T23:30:13.910189Z|runtime|ddba6b64-fdc5-4a96-9a2b-3ea4f4144b3d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/parsers/readers.py", line 1880, in _make_engine
+[MFLOG|0|2024-03-30T23:30:13.910365Z|runtime|d8b67cbb-81bf-41c2-9d40-90c15ae3a998]    self.handles = get_handle(
+[MFLOG|0|2024-03-30T23:30:13.910641Z|runtime|849ebba9-5d74-4b66-8750-8cbf27a5f959]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/common.py", line 728, in get_handle
+[MFLOG|0|2024-03-30T23:30:13.910888Z|runtime|b2ab410d-4c80-4256-b2b3-1371ad7ab6d9]    ioargs = _get_filepath_or_buffer(
+[MFLOG|0|2024-03-30T23:30:13.911112Z|runtime|bc96b59a-74d3-400f-b430-275371d68587]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/io/common.py", line 472, in _get_filepath_or_buffer
+[MFLOG|0|2024-03-30T23:30:13.911326Z|runtime|60ba5189-6ec7-42af-973e-a3b38ebcb620]    raise ValueError(msg)
+[MFLOG|0|2024-03-30T23:30:13.911600Z|runtime|13b456ca-0a49-4cca-b8e0-539de4d34296]ValueError: Invalid file path or buffer object type: <class 'NoneType'>
+[MFLOG|0|2024-03-30T23:30:13.911730Z|runtime|491d8080-ce0a-4b16-996b-3b2c7574962e]
+[MFLOG|0|2024-03-30T23:30:13.912318Z|runtime|dd7b8205-5f81-43a9-b7ff-6a155947cfb1]Task failed.

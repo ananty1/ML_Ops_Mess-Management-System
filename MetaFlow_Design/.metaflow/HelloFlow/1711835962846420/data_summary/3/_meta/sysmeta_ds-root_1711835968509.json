@@ -1,0 +1,1 @@
+{"flow_id": "HelloFlow", "run_number": "1711835962846420", "step_name": "data_summary", "task_id": "3", "field_name": "ds-root", "type": "ds-root", "value": "/home/ananty/metaflow-learning/CSD_Proj/.metaflow", "tags": ["attempt_id:0"], "user_name": "ananty", "ts_epoch": 1711835968509}

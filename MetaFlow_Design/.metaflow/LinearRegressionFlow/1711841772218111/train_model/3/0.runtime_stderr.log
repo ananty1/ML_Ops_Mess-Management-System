@@ -1,0 +1,48 @@
+[MFLOG|0|2024-03-30T23:36:16.450949Z|runtime|49fccf81-b445-4e3f-a126-dee12b7d7d8b]<flow LinearRegressionFlow step train_model> failed:
+[MFLOG|0|2024-03-30T23:36:16.458880Z|runtime|c3bc23dc-b5f8-42b0-b047-bbdb29238c2f]    Internal error
+[MFLOG|0|2024-03-30T23:36:16.459747Z|runtime|44909a92-6ce2-4ded-bc4f-3b22b2c69b83]Traceback (most recent call last):
+[MFLOG|0|2024-03-30T23:36:16.459957Z|runtime|bfde171c-2c4b-40e1-9efe-ec9b9b491651]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-03-30T23:36:16.460104Z|runtime|92b00c65-50d3-485c-ba8b-d0da66719520]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-03-30T23:36:16.460318Z|runtime|e449d399-1104-4c25-a2ba-e47087562247]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-03-30T23:36:16.460519Z|runtime|52b39cb9-e71e-4fd6-9eb6-429102598450]    return func(args, kwargs)
+[MFLOG|0|2024-03-30T23:36:16.460809Z|runtime|c0fef808-6da1-4203-b67e-d92e220651bd]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-03-30T23:36:16.461205Z|runtime|0b93e5d5-1b0a-4cef-a251-e0a6f96090cc]    return self.main(args, kwargs)
+[MFLOG|0|2024-03-30T23:36:16.461521Z|runtime|8c7a024c-8151-4d8b-b5ad-62fcbef0efa7]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-03-30T23:36:16.461750Z|runtime|1c402856-4bdc-47dc-9d7b-7486e2600a0c]    rv = self.invoke(ctx)
+[MFLOG|0|2024-03-30T23:36:16.462065Z|runtime|985becfe-492f-44e6-843c-3be755234b85]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-03-30T23:36:16.462491Z|runtime|9cac0f42-9eb7-4a62-99cb-cd46379e4ad5]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-03-30T23:36:16.462738Z|runtime|8bb17fcd-add7-47d8-939d-f92d3dcdd1f7]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-03-30T23:36:16.463036Z|runtime|e1ebeaea-07a6-4215-b919-ad152263559d]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-03-30T23:36:16.643801Z|runtime|0ef71b53-95a8-4feb-81f1-68d949d21a20]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-03-30T23:36:16.644032Z|runtime|5e79fdd3-c160-4cf4-9c3a-a103fecf22af]    return callback(args, kwargs)
+[MFLOG|0|2024-03-30T23:36:16.644127Z|runtime|0ece1438-c8fb-4841-82c9-1c0d689c27e6]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-03-30T23:36:16.644217Z|runtime|7188c684-d61c-430b-a170-062d2945fac2]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-03-30T23:36:16.644320Z|runtime|84a74311-7832-4ef0-a2e6-6d603b7c8844]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-03-30T23:36:16.644379Z|runtime|16a4f001-a3c9-4a9b-85ad-268d9a9f5a9e]    task.run_step(
+[MFLOG|0|2024-03-30T23:36:16.644535Z|runtime|6750a496-ae0d-47f6-af22-e018d2890b09]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-03-30T23:36:16.644719Z|runtime|9bb9917f-2cbf-420e-b093-3e5ec15979a3]    self._exec_step_function(step_func)
+[MFLOG|0|2024-03-30T23:36:16.644894Z|runtime|cc241db2-c8e8-4d67-8b85-b87fe6b9a060]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-03-30T23:36:16.645133Z|runtime|11087d6d-d7e1-4dae-9cd0-6c88773150d8]    step_function()
+[MFLOG|0|2024-03-30T23:36:16.645249Z|runtime|e8d4d909-2c16-49ee-a180-4730e44c1330]  File "/home/ananty/metaflow-learning/CSD_Proj/model_preparation.py", line 46, in train_model
+[MFLOG|0|2024-03-30T23:36:16.645390Z|runtime|8acbf143-8f7a-4cc6-b2e9-d3b181e69919]    model.fit(X_train, y_train)
+[MFLOG|0|2024-03-30T23:36:16.645538Z|runtime|68c76c77-a396-49b8-bf93-cb1615269335]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/base.py", line 1474, in wrapper
+[MFLOG|0|2024-03-30T23:36:16.645758Z|runtime|693af4bd-9eee-4a4e-8df1-22ad4f950f53]    return fit_method(estimator, args, kwargs)
+[MFLOG|0|2024-03-30T23:36:16.645949Z|runtime|703577da-d2c6-499b-be71-e6c9cf236564]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/linear_model/_base.py", line 578, in fit
+[MFLOG|0|2024-03-30T23:36:16.646200Z|runtime|92ff3e93-b695-4761-9520-a35f15527bf5]    X, y = self._validate_data(
+[MFLOG|0|2024-03-30T23:36:16.646435Z|runtime|46ea6ac7-644b-4543-abfd-83650a24d34c]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/base.py", line 650, in _validate_data
+[MFLOG|0|2024-03-30T23:36:16.646765Z|runtime|08d4edd1-70f6-4ea4-ab94-85effdd82aee]    X, y = check_X_y(X, y, check_params)
+[MFLOG|0|2024-03-30T23:36:16.646968Z|runtime|57b0f4ee-6455-43f4-987b-b9a773fd7888]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1279, in check_X_y
+[MFLOG|0|2024-03-30T23:36:16.647115Z|runtime|b6765b89-d3f2-4131-96b4-c44df28baff1]    y = _check_y(y, multi_output=multi_output, y_numeric=y_numeric, estimator=estimator)
+[MFLOG|0|2024-03-30T23:36:16.647289Z|runtime|dc97010c-c5fb-45f6-a283-aeb92bee3f46]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1289, in _check_y
+[MFLOG|0|2024-03-30T23:36:16.647513Z|runtime|0821cf05-95de-4d56-8b2c-3efcaf9072ad]    y = check_array(
+[MFLOG|0|2024-03-30T23:36:16.647794Z|runtime|7d3e6263-122c-41dc-a900-2f8dc140a6ba]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 1049, in check_array
+[MFLOG|0|2024-03-30T23:36:16.647994Z|runtime|cde11801-ed4f-44d8-b7e1-aa597205d4df]    _assert_all_finite(
+[MFLOG|0|2024-03-30T23:36:16.648228Z|runtime|a11497ef-33e8-4849-909c-59c9dd7d404e]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/utils/validation.py", line 110, in _assert_all_finite
+[MFLOG|0|2024-03-30T23:36:16.648462Z|runtime|0ce58f3c-b256-46ce-92c7-cf92c8c664df]    if _object_dtype_isnan(X).any():
+[MFLOG|0|2024-03-30T23:36:16.648694Z|runtime|6e1205f4-df77-42a6-90e7-3c2e76740692]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/sklearn/utils/fixes.py", line 60, in _object_dtype_isnan
+[MFLOG|0|2024-03-30T23:36:16.648878Z|runtime|e33f970e-7331-4cb3-9140-42e36db4cd42]    return X != X
+[MFLOG|0|2024-03-30T23:36:16.649124Z|runtime|4616ec43-242e-4988-9105-bed043b618d9]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/scipy/sparse/_base.py", line 387, in __bool__
+[MFLOG|0|2024-03-30T23:36:16.649266Z|runtime|9a642666-05e0-48e9-88a8-e901504dba68]    raise ValueError("The truth value of an array with more than one "
+[MFLOG|0|2024-03-30T23:36:16.649424Z|runtime|34758ffa-ede7-48cb-b336-5eab95159a98]ValueError: The truth value of an array with more than one element is ambiguous. Use a.any() or a.all().
+[MFLOG|0|2024-03-30T23:36:16.649577Z|runtime|d64ffd9f-f29a-4d7c-a2ca-7bf065d22b0c]
+[MFLOG|0|2024-03-30T23:36:16.650259Z|runtime|3488714e-2ab9-4740-b5dc-16463d58df6a]Task failed.

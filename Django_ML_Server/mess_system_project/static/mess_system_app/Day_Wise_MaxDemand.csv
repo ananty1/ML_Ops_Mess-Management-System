@@ -1,0 +1,29 @@
+,day_name,time_slot,Food,demand
+1,Friday,Afternoon,Rajma,2713
+3,Friday,Evening-Dinner,Carrot Peas,2911
+6,Friday,Morning,Gobi Paratha-Bhurji,1583
+8,Friday,Snacks,Panni Puri,1341
+11,Monday,Afternoon,Mix Veg dry,2561
+12,Monday,Evening-Dinner,Brinjal Bartha,2838
+15,Monday,Morning,Aloo puri-Boiled egg,1696
+17,Monday,Snacks,Dahi Kachori,1483
+18,Saturday,Afternoon,Choley(kabuli chana),3102
+23,Saturday,Evening-Dinner,Mix Veg,2745
+25,Saturday,Morning,Idly-Boiled egg,1652
+26,Saturday,Snacks,Bread Pakoda,885
+29,Sunday,Afternoon,Gatte Sabji,2450
+33,Sunday,Evening-Dinner,Veg Manchurian,2866
+34,Sunday,Morning,Rawa Dosa-Bhurji,1842
+36,Sunday,Snacks,Samosa,993
+40,Thursday,Afternoon,Palak Tomato,2303
+41,Thursday,Evening-Dinner,Aloo Sem,2704
+45,Thursday,Morning,Uttapam-Omlette,1563
+46,Thursday,Snacks,Veg Cutlet,1639
+48,Tuesday,Afternoon,Chole Masala,2748
+50,Tuesday,Evening-Dinner,Aloo gobhi mattr,2471
+54,Tuesday,Morning,Masala Dosa-Omlette,2198
+55,Tuesday,Snacks,Pav Bhaji,987
+57,Wednesday,Afternoon,Loki Chana,2183
+62,Wednesday,Evening-Dinner,Veg kofta,2267
+63,Wednesday,Morning,Aloo Paratha-Bhurji,1487
+65,Wednesday,Snacks,Veg Roll,1334

@@ -1,0 +1,32 @@
+[MFLOG|0|2024-03-30T23:35:24.324737Z|runtime|513ac8c9-681e-46b3-a64c-999108b8335a]<flow LinearRegressionFlow step preprocessing> failed:
+[MFLOG|0|2024-03-30T23:35:24.393566Z|runtime|ffe96f1d-d54d-4c08-9781-161b98f0957f]    Internal error
+[MFLOG|0|2024-03-30T23:35:24.394323Z|runtime|a3faec9d-b1a6-4f79-b63c-cfbab6be44d3]Traceback (most recent call last):
+[MFLOG|0|2024-03-30T23:35:24.394475Z|runtime|530016a2-13d8-4bf8-82e6-df60fda6203d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-03-30T23:35:24.394656Z|runtime|cb16e927-8ae0-47d9-b5bd-a18e22dacbaf]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-03-30T23:35:24.394801Z|runtime|9b614eb8-d5a2-4c55-bf19-7d2fdbf21b27]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-03-30T23:35:24.395102Z|runtime|ae1b42b5-20de-4479-b9d9-9a8dc1b57ca6]    return func(args, kwargs)
+[MFLOG|0|2024-03-30T23:35:24.395399Z|runtime|f127a5b8-0f08-45df-8aed-fb4f9b78ecae]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-03-30T23:35:24.395742Z|runtime|0593ae5d-aeb5-4274-8e1f-feb7c90088e8]    return self.main(args, kwargs)
+[MFLOG|0|2024-03-30T23:35:24.395955Z|runtime|e030a1b0-b670-4cd2-8919-f36e758d5111]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-03-30T23:35:24.396217Z|runtime|016b5f1b-4d5c-4bd9-b630-c0b615553545]    rv = self.invoke(ctx)
+[MFLOG|0|2024-03-30T23:35:24.396530Z|runtime|fdfed14e-43ba-4aef-9bdf-e72858de1f59]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-03-30T23:35:24.396877Z|runtime|dd4f036b-d07c-4047-a303-6efb4f0e3489]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-03-30T23:35:24.397134Z|runtime|a85cfcda-b1ab-4a28-80f6-e915d7ede11a]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-03-30T23:35:24.397428Z|runtime|7b3b3b49-cd87-44f0-bdd9-970190b032f2]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-03-30T23:35:24.397681Z|runtime|59c65a12-5fff-4b6d-81fb-5062fb5876d9]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-03-30T23:35:24.398044Z|runtime|dbca441d-efdc-42ff-8842-6dc152288b38]    return callback(args, kwargs)
+[MFLOG|0|2024-03-30T23:35:24.576062Z|runtime|e4b44a87-c104-470c-b940-84081b1fd14d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-03-30T23:35:24.576253Z|runtime|84b2fe36-ad15-4562-a9fb-91a6f4c96989]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-03-30T23:35:24.576421Z|runtime|9221537a-4c0e-4d1e-ae45-e2c0c9f663fc]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-03-30T23:35:24.576638Z|runtime|06bd4a77-f720-4fe1-8be8-4d413a3af0aa]    task.run_step(
+[MFLOG|0|2024-03-30T23:35:24.576837Z|runtime|9cf9966f-07f7-4790-889a-8365e686c458]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-03-30T23:35:24.577038Z|runtime|21c9d700-deb6-4339-9b14-53dc2d200614]    self._exec_step_function(step_func)
+[MFLOG|0|2024-03-30T23:35:24.577127Z|runtime|82172ca6-1cf7-4273-82ed-a73014051685]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-03-30T23:35:24.577198Z|runtime|5e209982-b7c1-4dcf-bbdf-9427fa331ca2]    step_function()
+[MFLOG|0|2024-03-30T23:35:24.577316Z|runtime|3c244524-16d3-4272-a77f-ac41d69e48ce]  File "/home/ananty/metaflow-learning/CSD_Proj/model_preparation.py", line 27, in preprocessing
+[MFLOG|0|2024-03-30T23:35:24.577465Z|runtime|2aae9953-72b2-4de9-a56c-208189cb854f]    self.transformed_data, self.columns = self.transform_data(filter_df)
+[MFLOG|0|2024-03-30T23:35:24.577648Z|runtime|351e9a2c-6a58-4be5-8129-50c083c5861e]  File "/home/ananty/metaflow-learning/CSD_Proj/model_preparation.py", line 35, in transform_data
+[MFLOG|0|2024-03-30T23:35:24.577850Z|runtime|5ac99147-fc4b-45fd-b313-7da5d349ffbd]    columns.append('time_minute')
+[MFLOG|0|2024-03-30T23:35:24.578141Z|runtime|1607e9fa-7ffd-473b-91c9-943cfbf16b29]AttributeError: 'numpy.ndarray' object has no attribute 'append'
+[MFLOG|0|2024-03-30T23:35:24.578413Z|runtime|4d008beb-293b-4e50-9842-eb171780d1f2]
+[MFLOG|0|2024-03-30T23:35:24.579035Z|runtime|34a952fa-3ac2-4a7e-abba-59577f67fb84]Task failed.

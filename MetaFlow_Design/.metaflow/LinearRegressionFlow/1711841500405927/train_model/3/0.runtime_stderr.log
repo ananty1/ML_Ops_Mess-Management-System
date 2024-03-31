@@ -1,0 +1,36 @@
+[MFLOG|0|2024-03-30T23:31:44.523913Z|runtime|3b9891e2-b962-4620-a808-91e9008a9e97]<flow LinearRegressionFlow step train_model> failed:
+[MFLOG|0|2024-03-30T23:31:44.530982Z|runtime|e8ab53bc-33f0-4bc5-b1f3-f2a44ad4252c]    Internal error
+[MFLOG|0|2024-03-30T23:31:44.531716Z|runtime|8757f836-131c-4f3b-8408-a43d22fc9d8c]Traceback (most recent call last):
+[MFLOG|0|2024-03-30T23:31:44.531980Z|runtime|6f86e357-a7ec-43eb-a80e-5c69a7ab73b1]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 1177, in main
+[MFLOG|0|2024-03-30T23:31:44.532319Z|runtime|677a2107-4a40-40ad-a47a-e921977e867b]    start(auto_envvar_prefix="METAFLOW", obj=state)
+[MFLOG|0|2024-03-30T23:31:44.532747Z|runtime|4114af00-a8ef-455b-9700-d07c6395fccc]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/tracing/__init__.py", line 27, in wrapper_func
+[MFLOG|0|2024-03-30T23:31:44.533146Z|runtime|902e0b77-6bf1-476f-98b7-fb9cecb9d3c3]    return func(args, kwargs)
+[MFLOG|0|2024-03-30T23:31:44.533577Z|runtime|bfbd3172-3bce-4e3f-9940-3ed96c41ca7f]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 829, in __call__
+[MFLOG|0|2024-03-30T23:31:44.533968Z|runtime|06096296-0972-431b-ae3a-9b0321667f03]    return self.main(args, kwargs)
+[MFLOG|0|2024-03-30T23:31:44.534225Z|runtime|22b5ae01-dc95-40fd-b93e-8e66e05acc7d]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 782, in main
+[MFLOG|0|2024-03-30T23:31:44.534632Z|runtime|6c606b40-a775-41af-98ff-e8a0c109e961]    rv = self.invoke(ctx)
+[MFLOG|0|2024-03-30T23:31:44.534968Z|runtime|cd4490d9-be9b-4b04-9737-2e71e551dc34]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1259, in invoke
+[MFLOG|0|2024-03-30T23:31:44.535259Z|runtime|eae47e89-3e4f-4849-a645-389f838df345]    return _process_result(sub_ctx.command.invoke(sub_ctx))
+[MFLOG|0|2024-03-30T23:31:44.535630Z|runtime|e15357a6-91a9-44b9-b946-901ad745865a]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 1066, in invoke
+[MFLOG|0|2024-03-30T23:31:44.535966Z|runtime|36bed22a-94a6-4fbb-807a-11c9c456b66e]    return ctx.invoke(self.callback, ctx.params)
+[MFLOG|0|2024-03-30T23:31:44.536342Z|runtime|dff4e74b-d66a-40a1-a780-9fbcbff6406c]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/core.py", line 610, in invoke
+[MFLOG|0|2024-03-30T23:31:44.536660Z|runtime|680da30e-333b-4a17-ac9d-46f36abab4ed]    return callback(args, kwargs)
+[MFLOG|0|2024-03-30T23:31:44.537048Z|runtime|5d1a6e74-b432-4849-9207-f3b29a868e2a]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/_vendor/click/decorators.py", line 21, in new_func
+[MFLOG|0|2024-03-30T23:31:44.537384Z|runtime|519e98f5-d432-4c16-9782-95037223f0d7]    return f(get_current_context(), args, kwargs)
+[MFLOG|0|2024-03-30T23:31:44.687549Z|runtime|59438b95-ce52-4a07-bc95-5cc76eae8e91]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/cli.py", line 572, in step
+[MFLOG|0|2024-03-30T23:31:44.687734Z|runtime|f8834a3b-802f-4f97-a510-9205e10dd54e]    task.run_step(
+[MFLOG|0|2024-03-30T23:31:44.687899Z|runtime|74be02ef-5e84-49c9-a7f1-87346848013a]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 619, in run_step
+[MFLOG|0|2024-03-30T23:31:44.687990Z|runtime|4197804d-1edb-4e99-a964-853afcb90d0a]    self._exec_step_function(step_func)
+[MFLOG|0|2024-03-30T23:31:44.688098Z|runtime|a0d62f55-db00-4473-8834-4f51b82dc688]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/metaflow/task.py", line 70, in _exec_step_function
+[MFLOG|0|2024-03-30T23:31:44.688242Z|runtime|1aad2cab-0e08-4b27-93db-7586ee6ef9fe]    step_function()
+[MFLOG|0|2024-03-30T23:31:44.688492Z|runtime|c87c8be3-b4a9-4227-832c-b907258720aa]  File "/home/ananty/metaflow-learning/CSD_Proj/model_preparation.py", line 39, in train_model
+[MFLOG|0|2024-03-30T23:31:44.688644Z|runtime|c74cbce6-fd11-4428-925f-65bebcb70d38]    X = pd.DataFrame(self.transformed_data.toarray(), columns=self.columns).drop(columns=['footprint'])
+[MFLOG|0|2024-03-30T23:31:44.688855Z|runtime|cab7f661-9627-42b2-9084-55b487e01d5e]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/core/frame.py", line 816, in __init__
+[MFLOG|0|2024-03-30T23:31:44.689055Z|runtime|d438023b-8dea-4bc9-92ce-b6bab0f5add1]    mgr = ndarray_to_mgr(
+[MFLOG|0|2024-03-30T23:31:44.689373Z|runtime|2dbf913a-9b7f-4fb1-a332-0459bb2f3688]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 336, in ndarray_to_mgr
+[MFLOG|0|2024-03-30T23:31:44.689549Z|runtime|5ee8235c-649c-4ccb-96c9-800f73e940bf]    _check_values_indices_shape_match(values, index, columns)
+[MFLOG|0|2024-03-30T23:31:44.689798Z|runtime|a9c482ff-ef34-45f2-914c-57288e6c22ae]  File "/home/ananty/metaflow-learning/Myenv/lib/python3.10/site-packages/pandas/core/internals/construction.py", line 420, in _check_values_indices_shape_match
+[MFLOG|0|2024-03-30T23:31:44.690106Z|runtime|d65fd6c3-7cf1-4276-8f36-b241aa4b1dd8]    raise ValueError(f"Shape of passed values is {passed}, indices imply {implied}")
+[MFLOG|0|2024-03-30T23:31:44.690276Z|runtime|1c05ddea-dfa3-4c6f-837d-8f51efbea4df]ValueError: Shape of passed values is (14491, 63), indices imply (14491, 61)
+[MFLOG|0|2024-03-30T23:31:44.690433Z|runtime|177359ef-2071-4a28-a433-1a8ef4b53b6b]
+[MFLOG|0|2024-03-30T23:31:44.691107Z|runtime|dc1eb4ba-0122-4471-bfaf-016b6c368a26]Task failed.
