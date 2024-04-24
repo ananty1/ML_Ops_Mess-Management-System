@@ -7,6 +7,7 @@ from joblib import load
 import os 
 from decimal import Decimal
 import numpy as np 
+from prophet import Prophet
 
 
 def home(request):
@@ -109,3 +110,55 @@ def popular_dishes(request):
     dish = df.loc[(df['day_name'] == day_name) & (df['time_slot'] == time_slot), 'Food'].iloc[0]
     return JsonResponse({"Popular dish":dish})
      
+
+def getGraph(request):
+    data = json.loads(request.body)
+    timestamp = data['timestamp']
+    last_5_minute_footprint = data['footprint']
+    print(timestamp,last_5_minute_footprint)
+    df = pd.read_csv('static/mess_system_app/Galav_Mess_5_Minute_Slot_foot_print.csv',index_col=0)
+    # Define the new row data
+    # new_row = {'record_date': '2024-04-25 16:00:00', 'footprint': 42}
+    # new_row = {'record_date': timestamp, 'footprint': last_5_minute_footprint}
+
+    # # Append the new row to the DataFrame
+    # df = df.append(new_row, ignore_index=True)
+
+    # # Save the updated DataFrame back to a CSV file
+    # df.to_csv('static/mess_system_app/Galav_Mess_5_Minute_Slot_foot_print.csv', index=False)
+
+
+    df['ds'] = pd.to_datetime(df['ds'])
+    m = Prophet()
+    m.fit(df)
+    from datetime import datetime, timedelta
+
+    # Get the current timestamp
+    current_timestamp = datetime.now()
+
+    # Create a DataFrame with the current timestamp and next 30-minute intervals
+    future_dates = pd.DataFrame({
+        'ds': pd.date_range(start=current_timestamp, periods=24, freq='5min')
+    })
+
+    # Make predictions for the next 30 minutes
+    forecast = m.predict(future_dates)
+
+    # Convert Timestamp objects to string format
+    forecast['ds'] = forecast['ds'].astype(str)
+    # Convert NumPy arrays to lists for JSON serialization
+    future_time_stamp = forecast['ds'].tolist()
+    future_predictions = forecast['yhat'].tolist()
+
+    # Prepare JSON response
+    data = {
+        "message": "Forecasting of next two hours at interval of 30 minutes",
+        "future_time_stamp": future_time_stamp,
+        "footprint_count": future_predictions
+    }
+
+    # Convert data to JSON string
+    json_data = json.dumps(data)
+
+    
+    return JsonResponse(json_data, status=200, safe=False)
